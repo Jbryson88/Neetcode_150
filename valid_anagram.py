@@ -23,3 +23,8 @@ class Solution:
         def isAnagram(self, s: str, t: str) -> bool:
             return Counter(s) == Counter(t)
             
+
+# O(1), sometimes O(nlogn), sometimes O(n^2) 
+class Solution: 
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
